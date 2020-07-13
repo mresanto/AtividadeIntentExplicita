@@ -4,13 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="onClickEnviar"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnExibir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exibir"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="369dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:text="Nome" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odeias o Android Studio?" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="Quais motivos?" />
+
+        <RadioGroup
+            android:id="@+id/rdbG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdbL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lento" />
+
+            <RadioButton
+                android:id="@+id/rdbML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muito Lento" />
+
+            <RadioButton
+                android:id="@+id/rdbDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deverás Lento, mas muito lento" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onclickEnviar"
+            android:text="Enviar" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
